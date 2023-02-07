@@ -37,6 +37,7 @@ use std::{borrow::Borrow, collections::BTreeSet, sync::Arc};
 use tracing::warn;
 
 /// An instantiation of the MoveVM.
+#[derive(Clone)]
 pub(crate) struct VMRuntime {
     loader: Loader,
 }

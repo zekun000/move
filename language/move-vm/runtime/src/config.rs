@@ -5,6 +5,7 @@ use move_binary_format::file_format_common::VERSION_MAX;
 use move_bytecode_verifier::VerifierConfig;
 
 /// Dynamic config options for the Move VM.
+#[derive(Clone)]
 pub struct VMConfig {
     pub verifier: VerifierConfig,
     pub max_binary_format_version: u32,
